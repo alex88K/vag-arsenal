@@ -1,38 +1,15 @@
 <aside class="left-aside">
    <!-- catalog-b -->
-   <div class="module-b aside-catalog-b">
-      <div class="section-header"><span class="section-header-in">Каталог товаров</span></div>
-      <div class="aside-catalog-b-wrap">
-         <div class="list-header">Запчасти для вашего ТО</div>
-         <ul class="aside-catalog-list">
-            <li>
-               <a href="/"><svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg>Комплекты ТО</a>
-            </li>
-         </ul>
-         <div class="list-header">Запчасти для автомобилей</div>
-         <ul class="aside-catalog-list">
-            <li>
-               <a href="/">
-                  <svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg>Audi<div class="brand-thumb-wrap"><img src="pic/car-logos/thumbs/audi.png" class="brand-thumb" alt="Audi"></div>
-               </a>
-            </li>
-            <li>
-               <a href="/">
-                  <svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg>Volkswagen<div class="brand-thumb-wrap"><img src="pic/car-logos/thumbs/volkswagen.png" class="brand-thumb" alt="Volkswagen"></div>
-                  </a>
-            </li>
-            <li>
-               <a href="/">
-                  <svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg>Skoda<div class="brand-thumb-wrap"><img src="pic/car-logos/thumbs/skoda.png" class="brand-thumb" alt="Skoda"></div>
-               </a>
-            </li>
-         </ul>
-      </div>
-   </div>
+   
+   <?php include_once "aside-catalog-b.php" ?>
+
    <!-- news-b -->
    <div class="module-b news-b">
-      <div class="section-header"><span class="section-header-in">Новости</span></div>
-      <div class="aside-news-b-wrap">
+      <div class="section-header">
+         <span class="section-header-in">Новости</span>
+         <div class="dropdown-btn visible-xs visible-sm visible-md pull-right" role="button" data-toggle="collapse" href="#news-module" aria-expanded="false" aria-controls="news-module"><svg class="chevron-i"><use xlink:href="#chevron-i"></use></svg></div>
+      </div>
+      <div class="aside-news-b-wrap collapse in" id="news-module">
          <ul class="aside-news-list">
             <li>
                <div class="aside-news-left">
@@ -71,8 +48,11 @@
    </div>
    <!-- vote-b -->
    <div class="module-b vote-b">
-      <div class="section-header"><span class="section-header-in">Опрос</span></div>
-      <div class="vote-b-wrap">
+      <div class="section-header">
+         <span class="section-header-in">Опрос</span>
+         <div class="dropdown-btn visible-xs visible-sm visible-md pull-right" role="button" data-toggle="collapse" href="#vote-module" aria-expanded="false" aria-controls="vote-module"><svg class="chevron-i"><use xlink:href="#chevron-i"></use></svg></div>
+      </div>
+      <div class="vote-b-wrap collapse in" id="vote-module">
          <div class="vote-title">Важна ли для Вас стоимость доставки?</div>
          <div class="answer-content">
             <ul class="vote-list">

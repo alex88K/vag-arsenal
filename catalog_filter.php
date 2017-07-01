@@ -3,17 +3,17 @@
       <div class="section-header">Выберите каталог для подбора</div>
       <ul class="catalog-list">
          <li class="catalog-item"><a href="/category1" class="catalog-item-link">
-            <img src="/pic/car-logos/audi.png" class="catalog-item-logo" width="190px" height="120px" alt="Audi">
+            <img src="pic/car-logos/audi.png" class="catalog-item-logo" width="190px" height="120px" alt="Audi">
             <span class="catalog-item-bottom btn">подбор по каталогу <svg class="angle-d-right-i"><use xlink:href="#angle-d-right-i"></use></svg></span></a>
             <div class="bg-img cover-img" style="background-image: url(../i/catalog-bg/c1.jpg);"></div>
          </li>
          <li class="catalog-item"><a href="/category1" class="catalog-item-link">
-            <img src="/pic/car-logos/volkswagen.png" class="catalog-item-logo" width="125px" height="125px" alt="volkswagen">
+            <img src="pic/car-logos/volkswagen.png" class="catalog-item-logo" width="125px" height="125px" alt="volkswagen">
             <span class="catalog-item-bottom btn">подбор по каталогу <svg class="angle-d-right-i"><use xlink:href="#angle-d-right-i"></use></svg></span></a>
             <div class="bg-img cover-img" style="background-image: url(../i/catalog-bg/c2.jpg);"></div>
          </li>
          <li class="catalog-item"><a href="/category1" class="catalog-item-link">
-            <img src="/pic/car-logos/skoda.png" class="catalog-item-logo" width="124px" height="124px" alt="skoda">
+            <img src="pic/car-logos/skoda.png" class="catalog-item-logo" width="124px" height="124px" alt="skoda">
             <span class="catalog-item-bottom btn">подбор по каталогу <svg class="angle-d-right-i"><use xlink:href="#angle-d-right-i"></use></svg></span></a>
             <div class="bg-img cover-img" style="background-image: url(../i/catalog-bg/c3.jpg);"></div>
          </li>

@@ -1,7 +1,7 @@
 <aside class="right-aside">
    <!-- callback-b -->
    <div class="module-b callback-b">
-      <div class="section-header"><span class="section-header-in">Обратный звонок</span></div>
+      <div class="section-header"><div class="section-header-in">Обратный звонок</div></div>
       <form action="#" class="aside-callback-form">
       	<input type="text" name="uname" class="aside-input" placeholder="Как вас зовут?">
       	<input type="text" name="uphone" class="aside-input" placeholder="+7 (___) ___-____">
@@ -12,7 +12,7 @@
 	<!-- ShopCart -->
 	<div class="module-b aside-cart-b">
 		<div class="section-header"><div class="section-header-in">Ваша корзина</div></div>
-		<div class="aside-cart-b-wrap">Товаров в корзине <span class="counter">0</span> на сумму <span class="price">0 &#164;</span></div>
+		<div class="aside-cart-b-wrap" >Товаров в корзине <span class="counter">0</span> на сумму <span class="price">0 &#164;</span></div>
 	</div>
 
 	<!-- special offer -->

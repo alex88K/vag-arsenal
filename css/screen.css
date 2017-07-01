@@ -1209,6 +1209,10 @@ input::placeholder {
   display: inline-block;
   vertical-align: top;
 }
+.left-aside a:hover,
+.right-aside a:hover {
+  color: #00abc5;
+}
 
 .content-b {
   display: inline-block;
@@ -1218,6 +1222,11 @@ input::placeholder {
 
 .module-b {
   margin-bottom: 40px;
+}
+
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
 }
 
 .module-b .section-header {
@@ -1234,6 +1243,10 @@ input::placeholder {
   background-color: #fff;
 }
 
+.dropdown-btn {
+  display: none;
+}
+
 .list-header {
   padding: 14px 22px;
   font-family: "MuseoSansMedium";
@@ -1243,30 +1256,112 @@ input::placeholder {
   line-height: 1.2;
 }
 
-.aside-catalog-list li a {
+.aside-nav-lvl_1 {
+  background-color: #fff;
+}
+.aside-nav-lvl_1 > li > a {
   position: relative;
   display: block;
   height: 50px;
   padding: 0 22px;
-  font-family: "MuseoSansMedium";
   font-size: 100%;
-  color: #555;
   line-height: 49px;
-  background-color: #fff;
+  font-family: "MuseoSansMedium";
+  color: #555;
 }
-.aside-catalog-list li:nth-child(n+1) {
+.aside-nav-lvl_1 > li > a:hover .brand-thumb {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.aside-nav-lvl_1 > li:nth-child(n+1) {
   border-top: 1px solid #e4e4e4;
 }
-.aside-catalog-list .caret-left-i {
+.aside-nav-lvl_1 .caret-left-i {
   margin-right: 8px;
 }
-.aside-catalog-list .brand-thumb {
+.aside-nav-lvl_1 .brand-thumb {
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.aside-nav-lvl_1 .selected > .aside-nav-lvl {
+  display: block;
+}
+
+.selected > a .caret-left-i {
+  position: relative;
+  top: 3px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.aside-nav-lvl {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.aside-nav-lvl li a {
+  position: relative;
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-family: "MuseoSansMedium";
+  font-size: 87%;
+  color: #555;
+}
+
+.aside-nav-lvl_2 {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.aside-nav-lvl_2 li a,
+.aside-nav-lvl_3 li a,
+.aside-nav-lvl_4 li a {
+  position: relative;
+}
+.aside-nav-lvl_2 li a:after,
+.aside-nav-lvl_3 li a:after,
+.aside-nav-lvl_4 li a:after {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: .5em;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  margin-top: 3px;
+  background-color: #00abc5;
+  border-radius: 50%;
+}
+
+.aside-nav-lvl_2 li a {
+  padding-left: 40px;
+}
+.aside-nav-lvl_2 li a:after {
+  left: 28px;
+}
+
+.aside-nav-lvl_3 li a {
+  padding-left: 50px;
+}
+.aside-nav-lvl_3 li a:after {
+  left: 38px;
+}
+
+.aside-nav-lvl_4 li a {
+  padding-left: 60px;
+}
+.aside-nav-lvl_4 li a:after {
+  left: 48px;
 }
 
 .brand-thumb-wrap {
@@ -1491,9 +1586,6 @@ input::placeholder {
   line-height: 1.2;
   color: #333;
 }
-.product-item .product-title:hover {
-  color: #666;
-}
 .product-item .price-old {
   margin-right: 25px;
   font-family: "MuseoSansBold";
@@ -1563,6 +1655,7 @@ input::placeholder {
   font-size: 81%;
   color: #333;
   text-transform: uppercase;
+  background-color: #e4e4e4;
 }
 .adv-item:after {
   content: '';
@@ -1580,6 +1673,7 @@ input::placeholder {
 }
 
 .adv-item-img {
+  z-index: 1;
   position: relative;
   width: 80px;
   height: 50px;
@@ -1620,7 +1714,7 @@ input::placeholder {
 }
 
 .adv-footer .adv-item:after {
-  top: -125px;
+  top: -65px;
   right: -35px;
   border-top: none;
   border-bottom: 2px dotted #00c1f0;
@@ -1667,36 +1761,63 @@ input::placeholder {
   height: 150px;
 }
 
+.adv-footer .adv-warranty:after,
+.adv-footer .adv-pickup:after {
+  top: -60px;
+  height: 85px;
+}
 .adv-footer .adv-warranty {
   bottom: 0;
   left: 0;
-}
-.adv-footer .adv-warranty:after {
-  top: -60px;
-  height: 85px;
 }
 .adv-footer .adv-pickup {
   bottom: 0;
   left: 50%;
   margin-left: -100px;
 }
-.adv-footer .adv-pickup:after {
-  top: -60px;
-  height: 85px;
-}
 .adv-footer .adv-payment {
   bottom: 0;
   left: initial;
   right: 80px;
 }
+.adv-footer .adv-payment:after {
+  top: -125px;
+  height: 150px;
+}
 
 .section-header {
   position: relative;
-  padding: 18px 0;
+  padding: 18px 25px 18px 0;
   font-family: "MuseoSansBold";
   font-size: 150%;
   color: #00c1f0;
   text-transform: uppercase;
+}
+.section-header .chevron-i {
+  position: relative;
+  top: .5em;
+  width: 20px;
+  height: 20px;
+  margin-top: -6px;
+  margin-right: -22px;
+  fill: #00c1f0;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.section-header.collapsed .chevron-i {
+  position: relative;
+  top: .5em;
+  width: 20px;
+  height: 20px;
+  margin-top: -6px;
+  margin-right: -22px;
+  fill: #00c1f0;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 .breadcrumb {

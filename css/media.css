@@ -267,7 +267,7 @@
     bottom: 60px;
     left: 50%;
     width: 380px;
-    margin-left: -160px;
+    margin-left: -190px;
   }
 
   .catalog-item {
@@ -343,6 +343,12 @@
   .product-item:hover .cart-btn {
     bottom: 15px;
   }
+
+  .adv-head,
+  .adv-footer {
+    width: 80%;
+    left: 10%;
+  }
 }
 @media screen and (max-width: 990px) {
   .copyright {
@@ -359,15 +365,130 @@
   .copyright-text {
     padding-top: 10px;
   }
+
+  .adv-head,
+  .adv-footer {
+    width: 90%;
+    left: 5%;
+  }
 }
 @media screen and (max-width: 767px) {
   .f-brand {
     float: none !important;
     margin-top: 35px;
   }
+
+  .adv-head,
+  .adv-footer {
+    width: 100%;
+    left: 0;
+  }
+
+  .advantage-b-wrap {
+    height: 550px;
+    background-size: 390px;
+  }
+
+  .adv-head .adv-item:after,
+  .adv-footer .adv-item:after {
+    height: 90px;
+    right: -15px;
+    width: 40px;
+  }
+
+  .adv-delivery,
+  .adv-footer .adv-warranty {
+    left: 5%;
+  }
+
+  .adv-help,
+  .adv-footer .adv-payment {
+    right: 15%;
+  }
+
+  .adv-footer .adv-payment:after {
+    top: -65px;
+  }
 }
 @media screen and (max-width: 680px) {
+  .slider-item .slider-info {
+    width: 100%;
+  }
+  .slider-item .slider-title {
+    line-height: 1.2;
+  }
+
   .f-col {
     flex-basis: 100%;
+  }
+
+  .adv-delivery,
+  .adv-footer .adv-warranty {
+    left: 0;
+  }
+
+  .adv-help,
+  .adv-footer .adv-payment {
+    right: 10%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .slider-item .slider-title {
+    font-size: 200%;
+  }
+
+  .catalog-filter-form .field {
+    flex-basis: 100%;
+  }
+
+  .advantage-b-wrap {
+    height: auto;
+    background-image: none;
+  }
+
+  .adv-head .adv-item:after,
+  .adv-footer .adv-item:after {
+    display: none;
+  }
+
+  .adv-footer,
+  .adv-head,
+  .adv-item {
+    position: static;
+    margin: auto;
+  }
+
+  .adv-footer .adv-pickup {
+    margin-left: inherit;
+  }
+
+  .adv-item {
+    margin-bottom: 20px;
+  }
+
+  .adv-help,
+  .adv-footer .adv-payment {
+    right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .catalog-item {
+    height: 150px;
+  }
+
+  .catalog-item-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .catalog-item-logo {
+    top: 20px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
   }
 }
