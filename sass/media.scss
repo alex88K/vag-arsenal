@@ -1,7 +1,17 @@
+$pr: 'MuseoSansRegular';
+$pr_italic: 'MuseoSansItalic';
+$pr_light: 'MuseoSansLight';
+$pr_bold: 'MuseoSansBold'; 
+$pr_medium: 'MuseoSansMedium';
+
 /*--MEDIA QUERIES---------------------------------------*/
 
 @media screen and (min-width: 1600px) {
 	.container { width: 1600px; }
+}
+
+@media screen and (max-width: 1400px) {
+	.header .btn-callback { display: none; }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1599px) {
@@ -27,6 +37,21 @@
 
 	.container { width: 100%; }
 
+	.login-b,
+	.mail-link { display: none; }
+
+	.header-b {
+		.contact-b { left: 220px; }
+		.cart-b {
+			z-index: 8;
+			top: 90px;
+			right: initial;
+			left: 220px;
+		}
+	}
+
+	.brand-logo { padding: 15px 20px 0 15px; }
+
 	.main-menu {
 		.container { 
 			width: 100%;
@@ -34,9 +59,9 @@
 		}
 		.navbar-nav.nav {
 			display: block;
-			padding-top: 40px;
 			text-align: left;
-			.nav-item { 
+			.nav-item,
+			.login-item { 
 				display: block; 
 				float: none;
 				&.active a { 
@@ -51,22 +76,23 @@
 			a { 
 				float: none;
 				margin: 0;
-				padding: 18px 12px;
-				color: #fff;
+				padding: 15px 12px;
+				color: #333;
+				font-family: $pr_medium;
 				font-size: 87%;
-				font-weight: 500;
-				border-bottom: 1px solid #128bac;
+				border-bottom: 1px solid #ebebeb;
 				white-space: pre-line;
 				&:after { display: none; }
 				&:hover,
 				&:active,
 				&:focus { 
-					color: #1399bd !important; 
-					background-color: #f0f0f0;
+					color: #fff; 
+					background-color: #00c1f0;
 					border-color: transparent;
 					&:after { display: none; }
 				}
 			}
+			.login-item { display: block; }
 			.nav-item.dropdown > a { padding: 18px 42px 18px 12px; }
 			.caret { display: none; }
 			.drop-icon { display: block; }
@@ -92,7 +118,7 @@
 
 	/* General styles for all menus */
   	.cbp-spmenu {
-		background: #1399bd;
+		background: #fff;
 		position: fixed;
 		padding: 35px 0;
 		margin:0 !important;
@@ -112,10 +138,10 @@
 	
 	/* Orientation-dependent styles for the content of the menu */
 	.cbp-spmenu-vertical {
+		z-index: 1000;
 		width: 305px;
 		height: 100% !important;
 		top: 0;
-		z-index: -1;
 	}
 
 	.cbp-spmenu-horizontal {
@@ -166,15 +192,6 @@
 		-webkit-transition: all .8s ease;
 		-moz-transition: all .8s ease;
 		transition: all .8s ease;
-	}
-
-	.cbp-spmenu-push-toright:before {
-		z-index: 9;
-		content: '';
-		position: absolute;
-		top: 0; left: 0;
-		width: 100%; height: 100%;
-		background: rgba(0,0,0,.5);
 	}
 
 /*--END Menu------------------------------*/
@@ -324,6 +341,13 @@
 }
 
 @media screen and (max-width: 680px) {
+	.header-b {
+		.tel {
+			font-size: 87%;
+			a { margin-right: 6px; }
+		}
+	}
+
 	.slider-item {
 		.slider-info { width: 100%; }
 		.slider-title { line-height: 1.2; }
@@ -335,6 +359,11 @@
 	.adv-footer .adv-warranty { left: 0; }
 	.adv-help,
 	.adv-footer .adv-payment { right: 10%; }
+
+	.product-tab .nav-tab li {
+		margin-right: 25px;
+		font-size: 100%;
+	}
 }
 
 @media screen and (max-width: 550px) {
@@ -382,5 +411,10 @@
 		-ms-transform: none;
 		-o-transform: none;
 		transform: none;
+	}
+
+	.product-tab .nav-tab li {
+		margin-right: 15px;
+		font-size: 87%;
 	}
 }

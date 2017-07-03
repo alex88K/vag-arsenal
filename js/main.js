@@ -51,39 +51,121 @@ $(function() {
 		return false;
 	});
 
-/*--Aside product slider------------------------*/ 
+/*--Product carousel------------------------*/ 
 	
-	var asideProductCarouselState = 0;
+	// var asideProductCarouselState = 0;
 
-	$(document).on('resize', function() {
-		var windowWidth = ( $(document).outerWidth() < 768 ) ? true : false;
+	// $(document).on('resize', function() {
+	// 	var windowWidth = ( $(document).outerWidth() < 768 ) ? true : false;
 
-		if (windowWidth) {
-			asideProductCarouselState = 1;
-		} else {
-			asideProductCarouselState = 0;
-		}
+	// 	if (windowWidth) {
+	// 		asideProductCarouselState = 1;
+	// 	} else {
+	// 		asideProductCarouselState = 0;
+	// 	}
+	// });
+
+	// if (asideProductCarouselState) {
+	// 	asideProductCarousel();
+	// }
+
+	// function mobileProductCarousel() {
+	// 	var mobCarousel = $('.aside-product-carousel');
+
+	// 	if (mobCarousel.length > 0) {
+	// 		mobCarousel.owlCarousel({
+	// 			items: 2,
+	// 			nav: true,
+	// 			dots: false,
+	// 			loop: true
+	// 		});
+	// 	}
+	// }
+
+	// mobCarousel.owlCarousel({
+	// 	items: 2,
+	// 	nav: true,
+	// 	dots: false,
+	// 	loop: true
+	// });
+
+	var similarProducts = $('.similarProducts-b .owl-carousel');
+
+	if (similarProducts.length > 0) {
+		similarProducts.owlCarousel({
+			items: 3,
+			nav: false,
+			dots: false,
+			loop: true,
+			margin: 30,
+			lazyLoad: true,
+			smartSpeed: 800,
+			navSpeed: 800,
+			autoplaySpeed: 800,
+			fluidSpeed: 800,
+			autoplay: true,
+			autoplayTimeout: 8000,
+			responsive: {
+				0: { items: 1 },
+				600: { items: 2 },
+				768: { items: 3 }, 
+				1200: { items: 2},
+				1400: { items: 3 }
+			}
+		});
+	}
+
+	$('.similarProducts-b .nav-next').on('click', function() {
+		similarProducts.trigger('next.owl.carousel', [300]);
+		return false;
 	});
 
-	if (asideProductCarouselState) {
-		asideProductCarousel();
+	$('.similarProducts-b .nav-prev').on('click', function() {
+		similarProducts.trigger('prev.owl.carousel', [300]);
+		return false;
+	});
+
+	/* Related items */
+
+	var relatedGoods = $('.relatedGoods-b .owl-carousel');
+
+	if (relatedGoods.length > 0) {
+		relatedGoods.owlCarousel({
+			items: 3,
+			nav: false,
+			dots: false,
+			loop: true,
+			margin: 30,
+			lazyLoad: true,
+			smartSpeed: 800,
+			navSpeed: 800,
+			autoplaySpeed: 800,
+			fluidSpeed: 800,
+			autoplay: true,
+			autoplayTimeout: 50000,
+			responsive: {
+				0: { items: 1 },
+				600: { items: 2 },
+				768: { items: 3 },
+				1200: { items: 2 },
+				1400: { items: 3 }
+			}
+		});
 	}
 
-	function mobileProductCarousel() {
-		var mobCarousel = $('.aside-product-carousel');
+	$('.relatedGoods-b .nav-next').on('click', function() {
+		relatedGoods.trigger('next.owl.carousel', [300]);
+		return false;
+	});
 
-		if (mobCarousel.length > 0) {
-			mobCarousel.owlCarousel({
-				items: 2,
-				nav: true,
-				dots: false,
-				loop: true
-			});
-		}
-	}
+	$('.relatedGoods-b .nav-prev').on('click', function() {
+		relatedGoods.trigger('prev.owl.carousel', [300]);
+		return false;
+	}); 
 
 
-/*--Mask input for Callback form-----------*/
+
+/*--Mask input-----------*/
 
 	$("input[name='uphone'").mask("+7 (999) 999-9999"); 
 

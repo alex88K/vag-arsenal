@@ -24,7 +24,7 @@
 					<div class="product-badge product-badge-stock">акция</div>
 					<a href="#" class="product-img"><img src="pic/products/product1.jpg" alt="product title"></a>
 					<div class="product-info">
-						<a href="#" class="product-title">Рейка рулевая 1K1423055M</a>
+						<a href="#" class="product-head">Рейка рулевая 1K1423055M</a>
 						<div class="product-prices">
 							<span class="price-old">95 900 &#164;</span>
 							<span class="price">31 500 &#164;</span>
@@ -36,7 +36,7 @@
 					<div class="product-badge product-badge-stock">акция</div>
 					<a href="#" class="product-img"><img src="pic/products/product1.jpg" alt="product title"></a>
 					<div class="product-info">
-						<a href="#" class="product-title">Оригинальный подшипник задней ступицы Caddy 1T0598611A</a>
+						<a href="#" class="product-head">Оригинальный подшипник задней ступицы Caddy 1T0598611A</a>
 						<div class="product-prices">
 							<span class="price-old">95 900 &#164;</span>
 							<span class="price">31 500 &#164;</span>
@@ -48,7 +48,7 @@
 					<div class="product-badge product-badge-stock">акция</div>
 					<a href="#" class="product-img"><img src="pic/products/product1.jpg" alt="product title"></a>
 					<div class="product-info">
-						<a href="#" class="product-title">Подшипник задней ступицы SNR/NTN на Caddy</a>
+						<a href="#" class="product-head">Подшипник задней ступицы SNR/NTN на Caddy</a>
 						<div class="product-prices">
 							<span class="price-old">95 900 &#164;</span>
 							<span class="price">31 500 &#164;</span>

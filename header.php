@@ -10,7 +10,7 @@
 				<a href="/register" class="header-link"><svg class="userplus-i"><use xlink:href="#userplus-i"></use></svg>Регистрация</a>
 			</div>
 			<div class="contact-b">
-				<a href="mailto:info@vagarsenal.ru" class="header-link"><svg class="envelope-i"><use xlink:href="#envelope-i"></use></svg>info@vagarsenal.ru</a>
+				<a href="mailto:info@vagarsenal.ru" class="header-link mail-link"><svg class="envelope-i"><use xlink:href="#envelope-i"></use></svg>info@vagarsenal.ru</a>
 				<div class="tel">
 					<a href="tel:+79099219669" class="header-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7 (909) 921-96-69</a>
 					<a href="tel:+74957777777" class="header-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7 (495) 777-77-77</a>
@@ -29,9 +29,15 @@
    		</button>
    		<div class="main-menu collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="navbar">
 		   	<ul class="nav navbar-nav">
+		   		<li class="login-item">
+		   			<a href="/signin" class="header-link"><svg class="lock-i"><use xlink:href="#lock-i"></use></svg>Вход</a>
+		   		</li>
+		   		<li class="login-item">
+		   			<a href="/register" class="header-link"><svg class="userplus-i"><use xlink:href="#userplus-i"></use></svg>Регистрация</a>
+		   		</li>
 		   		<li class="nav-item"><a href="/">Главная</a></li>
 			   	<li class="nav-item"><a href="categories-page.php">О компании</a></li>
-			   	<li class="nav-item"><a href="pay.php">Оплата</a></li>
+			   	<li class="nav-item"><a href="product-page.php">Оплата</a></li>
 			   	<li class="nav-item"><a href="categories-page-2.php">Доставка</a></li>
 			   	<li class="nav-item"><a href="inner.php">Контакты</a></li>
 		   	</ul>
