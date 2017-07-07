@@ -29,31 +29,31 @@
                <p>Для дальнейшего подбора запчастей выберите модель Вашего автомобиля.</p>
 					<div class="catalog-in">
 						<div class="row">
-							<div class="col-md-4 col-sm-4">
+							<div class="col-md-4 col-sm-4 col-xs-6">
 								<a href="#" class="category-item">
 									<div class="category-img"><img src="pic/catalog/catalog-categories/auto/skoda/octavia.jpg" width="205px" height="115px" alt="Запчасти для ТО"></div>
 									<div class="category-title">Skoda Octavia</div>
 								</a>
 							</div>
-							<div class="col-md-4 col-sm-4">
+							<div class="col-md-4 col-sm-4 col-xs-6">
 								<a href="#" class="category-item">
 									<div class="category-img"><img src="pic/catalog/catalog-categories/auto/skoda/superb.jpg" width="215px" height="104px" alt="Тормозная система"></div>
 									<div class="category-title">Skoda Superb</div>
 								</a>
 							</div>
-							<div class="col-md-4 col-sm-4">
+							<div class="col-md-4 col-sm-4 col-xs-6">
 								<a href="#" class="category-item">
 									<div class="category-img"><img src="pic/catalog/catalog-categories/auto/skoda/rapid.jpg" width="209px" height="94px" alt="Передняя подвеска"></div>
 									<div class="category-title">Skoda Rapid</div>
 								</a>
 							</div>
-						   <div class="col-md-4 col-sm-4">
+						   <div class="col-md-4 col-sm-4 col-xs-6">
                         <a href="#" class="category-item">
                            <div class="category-img"><img src="pic/catalog/catalog-categories/auto/skoda/yeti.jpg" width="202px" height="123px" alt="Передняя подвеска"></div>
                            <div class="category-title">Skoda Yeti</div>
                         </a>
                      </div>
-                     <div class="col-md-4 col-sm-4">
+                     <div class="col-md-4 col-sm-4 col-xs-6">
                         <a href="#" class="category-item">
                            <div class="category-img"><img src="pic/catalog/catalog-categories/auto/skoda/fabia.jpg" width="226px" height="170px" alt="Передняя подвеска"></div>
                            <div class="category-title">Skoda Fabia</div>

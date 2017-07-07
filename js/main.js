@@ -9,8 +9,8 @@ $(function() {
 
 	promoSlider.on('initialized.owl.carousel', function(property) {
 		var current = property.item.index;
-		var prev = $(property.target).find(".owl-item").eq(current).prev().find(".slider-bg").attr('data-navpic');
-		var next = $(property.target).find(".owl-item").eq(current).next().find(".slider-bg").attr('data-navpic');
+		var prev = $(property.target).find(".owl-item").eq(current).prev().find(".slider-img > img").attr('data-navpic');
+		var next = $(property.target).find(".owl-item").eq(current).next().find(".slider-img > img").attr('data-navpic');
 
 		$('.nav-prev').find('.bg-img').css('background-image', 'url('+prev+')');
 		$('.nav-next').find('.bg-img').css('background-image', 'url('+next+')');
@@ -28,14 +28,14 @@ $(function() {
 			autoplaySpeed: 800,
 			fluidSpeed: 800,
 			autoplay: true,
-			autoplayTimeout: 500055
+			autoplayTimeout: 5000
 		});
 	}
 
 	promoSlider.on('changed.owl.carousel', function(property) {
 		var current = property.item.index;
-		var prev = $(property.target).find(".owl-item").eq(current).prev().find(".slider-bg").attr('data-navpic');
-		var next = $(property.target).find(".owl-item").eq(current).next().find(".slider-bg").attr('data-navpic');
+		var prev = $(property.target).find(".owl-item").eq(current).prev().find(".slider-img > img").attr('data-navpic');
+		var next = $(property.target).find(".owl-item").eq(current).next().find(".slider-img > img").attr('data-navpic');
 
 		$('.nav-prev').find('.bg-img').css('background-image', 'url('+prev+')');
 		$('.nav-next').find('.bg-img').css('background-image', 'url('+next+')');
@@ -52,42 +52,62 @@ $(function() {
 	});
 
 /*--Product carousel------------------------*/ 
+
+	// spec offer carousel
 	
-	// var asideProductCarouselState = 0;
+	var asideProductList = $('.aside-product-list .owl-carousel'),
+		owlOptions = {
+		items: 3,
+		nav: false,
+		dots: false,
+		loop: true,
+		margin: 30,
+		lazyLoad: true,
+		smartSpeed: 800,
+		navSpeed: 800,
+		fluidSpeed: 800,
+		autoplay: true,
+		responsive: {
+		   0: {
+		   	items: 1
+		   },
+		   600: { items: 2 },
+		   992: { items: 3 }
+		}
+	};
 
-	// $(document).on('resize', function() {
-	// 	var windowWidth = ( $(document).outerWidth() < 768 ) ? true : false;
+	if ( $(window).width() < 1199 ) {
+		var owlActive = asideProductList.owlCarousel(owlOptions);
+	} else {
+		asideProductList.addClass('off');
+	}
 
-	// 	if (windowWidth) {
-	// 		asideProductCarouselState = 1;
-	// 	} else {
-	// 		asideProductCarouselState = 0;
-	// 	}
-	// });
+	$('.aside-spec-offer-b .nav-next').on('click', function() {
+		asideProductList.trigger('next.owl.carousel', [300]);
+		return false;
+	});
 
-	// if (asideProductCarouselState) {
-	// 	asideProductCarousel();
-	// }
+	$('.aside-spec-offer-b .nav-prev').on('click', function() {
+		asideProductList.trigger('prev.owl.carousel', [300]);
+		return false;
+	});
 
-	// function mobileProductCarousel() {
-	// 	var mobCarousel = $('.aside-product-carousel');
+	$(window).resize(function() {
+		if ( $(window).width() < 1199 ) {
+			if ( asideProductList.hasClass('off') ) {
+			    var owlActive = asideProductList.owlCarousel(owlOptions);
+			    asideProductList.removeClass('off');
+			}
+		} else {
+			if ( !asideProductList.hasClass('off') ) {
+			   asideProductList.addClass('off').trigger('destroy.owl.carousel');
+			   asideProductList.find('.owl-stage-outer').children(':eq(0)').unwrap();
+			}
+		}
+	});
 
-	// 	if (mobCarousel.length > 0) {
-	// 		mobCarousel.owlCarousel({
-	// 			items: 2,
-	// 			nav: true,
-	// 			dots: false,
-	// 			loop: true
-	// 		});
-	// 	}
-	// }
 
-	// mobCarousel.owlCarousel({
-	// 	items: 2,
-	// 	nav: true,
-	// 	dots: false,
-	// 	loop: true
-	// });
+	/* similar products */ 
 
 	var similarProducts = $('.similarProducts-b .owl-carousel');
 
@@ -101,14 +121,13 @@ $(function() {
 			lazyLoad: true,
 			smartSpeed: 800,
 			navSpeed: 800,
-			autoplaySpeed: 800,
 			fluidSpeed: 800,
 			autoplay: true,
 			autoplayTimeout: 8000,
 			responsive: {
 				0: { items: 1 },
 				600: { items: 2 },
-				768: { items: 3 }, 
+				992: { items: 3 }, 
 				1200: { items: 2},
 				1400: { items: 3 }
 			}
@@ -139,14 +158,13 @@ $(function() {
 			lazyLoad: true,
 			smartSpeed: 800,
 			navSpeed: 800,
-			autoplaySpeed: 800,
 			fluidSpeed: 800,
 			autoplay: true,
-			autoplayTimeout: 50000,
+			autoplayTimeout: 5000,
 			responsive: {
 				0: { items: 1 },
 				600: { items: 2 },
-				768: { items: 3 },
+				992: { items: 3 },
 				1200: { items: 2 },
 				1400: { items: 3 }
 			}

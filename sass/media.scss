@@ -6,6 +6,14 @@ $pr_medium: 'MuseoSansMedium';
 
 /*--MEDIA QUERIES---------------------------------------*/
 
+@media screen and (min-width: 768px) {
+	.container { width: 100%; }
+}
+
+@media screen and (min-width: 992px) {
+	.container { width: 100%; }
+}
+
 @media screen and (min-width: 1600px) {
 	.container { width: 1600px; }
 }
@@ -14,13 +22,20 @@ $pr_medium: 'MuseoSansMedium';
 	.header .btn-callback { display: none; }
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1599px) {
-	.container { width: 1200px; }
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+	.promo-slider,
+	.promo-slider .slider-item { height: 500px; }
+
+	.navbar-nav .nav-item a { font-size: 130%; }
 
 	.left-aside,
-	.right-aside { width: 250px; }
+	.right-aside,
+	.content-b { float: left; }
 
-	.content-b { width: 610px; }
+	.left-aside,
+	.right-aside { width: 25%; }
+
+	.content-b { width: 50%; }
 
 	.catalog-filter-form .field { flex-basis: 22.5%; }
 
@@ -30,12 +45,17 @@ $pr_medium: 'MuseoSansMedium';
 	.adv-footer .adv-payment { right: 60px; }
 
 	.adv-item:after { right: -30px; }
+
+	.contact-b { left: 40%; }
+
+	.advantage-b-wrap { background-size: 100%; }
+
+	.adv-item:after,
+	.adv-footer .adv-item:after { right: 0; }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
 	.navbar-toggle { display: block; }
-
-	.container { width: 100%; }
 
 	.login-b,
 	.mail-link { display: none; }
@@ -53,6 +73,7 @@ $pr_medium: 'MuseoSansMedium';
 	.brand-logo { padding: 15px 20px 0 15px; }
 
 	.main-menu {
+		box-shadow: 3px 0 10px rgba(40,40,40,.2);
 		.container { 
 			width: 100%;
 			padding: 0; 
@@ -90,6 +111,7 @@ $pr_medium: 'MuseoSansMedium';
 					background-color: #00c1f0;
 					border-color: transparent;
 					&:after { display: none; }
+					svg { fill: #fff; }
 				}
 			}
 			.login-item { display: block; }
@@ -201,20 +223,22 @@ $pr_medium: 'MuseoSansMedium';
 	.slider-item {
 		height: 550px;
 		.slider-bg {
-			background-size: 600px;
-			background-position: center 15%;
+			max-height: 265px;
+			width: auto;
+			margin: 0 auto;
 		}
-		.slider-info {
-			width: 600px;
-			padding-top: 120px;
-			-webkit-justify-content: center;
-			justify-content: center;
-		}
+		.slider-info { padding: 10px 1em 0 1em; }
+	}
+
+	.slider-item-wrap { 
+		-webkit-justify-content: center;
+		justify-content: center;
+		top: -70px; 
 	}
 
 	.slider-nav {
 		top: initial;
-		bottom: 60px;
+		bottom: 50px;
 		left: 50%;
 		width: 380px;
 		margin-left: -190px;
@@ -267,13 +291,15 @@ $pr_medium: 'MuseoSansMedium';
 	.right-aside,
 	.content-b { width: 100%; }
 
-	.content-b { margin: 0; }
+	.content-b { 
+		margin: 0; 
+		padding: initial;
+	}
+
+	.aside-spec-offer-b .carousel-nav { display: block; }
 
 	.aside-product-list {
 		.product-item {
-			display: inline-block;
-			width: 240px;
-			margin-right: 25px;
 			&:last-child {  margin-right: 0; }
 			.product-img { height: 260px; }
 			.product-info { height: 130px; }
@@ -289,7 +315,7 @@ $pr_medium: 'MuseoSansMedium';
 	}
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
 	.copyright {
 		text-align: center;
 		.pull-right { float: none !important; }
@@ -306,6 +332,15 @@ $pr_medium: 'MuseoSansMedium';
 		width:  90%;
 		left: 5%; 
 	}
+
+	.product .product-title { margin-top: 1em; }
+
+	.product-prices {
+		display: inline-block;
+		margin-right: 40px;
+	}
+
+	.product-q { display: inline-block; }
 }
 
 @media screen and (max-width: 767px) {

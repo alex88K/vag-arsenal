@@ -8,15 +8,19 @@
    <div class="promo-slider">
       <ul class="owl-carousel slider-wrap">
          <li class="slider-item">
-            <div class="slider-bg" style="background-image: url(pic/promo-slider/slide3.png)" data-navpic="pic/promo-slider/slide3.png"></div>
-            <div class="slider-info">
-               <h2 class="slider-title">Запчасти и аксессуары</h2>
+            <div class="slider-item-wrap">
+               <div class="slider-img"><img src="pic/promo-slider/slide1.png" alt="title" data-navpic="pic/promo-slider/slide1.png"></div>
+               <div class="slider-info">
+                  <h2 class="slider-title">Запчасти и аксессуары</h2>
+               </div>
             </div>
          </li>
          <li class="slider-item">
-            <div class="slider-bg" style="background-image: url(pic/promo-slider/slide3.png)" data-navpic="pic/promo-slider/slide3.png"></div>
-            <div class="slider-info">
-               <h2 class="slider-title">Запчасти и аксессуары для автомобилей skoda</h2>
+            <div class="slider-item-wrap">
+               <div class="slider-img"><img src="pic/promo-slider/slide1.png" alt="title" data-navpic="pic/promo-slider/slide1.png"></div>
+               <div class="slider-info">
+                  <h2 class="slider-title">Запчасти и аксессуары для автомобилей skoda</h2>
+               </div>
             </div>
          </li>
       </ul>

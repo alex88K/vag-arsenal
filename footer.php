@@ -26,7 +26,7 @@
                   </div>
                   <div class="copyright-text">© 2017, Все права защищены</div>
                </div>
-               <div class="col-md-3 col-sm-12 pull-right">
+               <div class="col-md-4 col-sm-12 pull-right">
                   <a href="#" class="dev-logo text-right"><img src="i/palitra.png" width="305px" height="27px" alt="IT-ПАLИТРА — создание и продвижение сайтов"><div class="text-right">создание и продвижение сайтов</div></a>
                </div>
             </div>

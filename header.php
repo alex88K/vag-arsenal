@@ -12,13 +12,13 @@
 			<div class="contact-b">
 				<a href="mailto:info@vagarsenal.ru" class="header-link mail-link"><svg class="envelope-i"><use xlink:href="#envelope-i"></use></svg>info@vagarsenal.ru</a>
 				<div class="tel">
-					<a href="tel:+79099219669" class="header-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7 (909) 921-96-69</a>
-					<a href="tel:+74957777777" class="header-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7 (495) 777-77-77</a>
+					<a href="tel:+79099219669" class="header-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7&nbsp;(909)&nbsp;921-96-69</a>
+					<a href="tel:+74957777777" class="header-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7&nbsp;(495)&nbsp;777-77-77</a>
 				</div>
-				<a class="btn btn-callback" href="#modal-callback">Обратный звонок</a>
+				<button type="button" class="btn btn-callback" data-toggle="modal"  data-target="#modal-callback">Обратный звонок</button>
 			</div>
 			<div class="cart-b">
-				<a href="/cart" class="cart-link"><svg class="cart-i"><use xlink:href="#cart-i"></use></svg><div class="counter">0</div><span class="price">0 &#164;</span></a>
+				<a href="/cart" class="cart-link"><svg class="cart-i"><use xlink:href="#cart-i"></use></svg><div class="counter">0</div><span class="price">0&nbsp;&#164;</span></a>
 			</div>
 		</div>
    </div>
