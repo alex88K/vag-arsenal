@@ -26,18 +26,33 @@
          	<div class="content-inner">
          		<div class="product">
          			<div class="row">
-	         			<div class="col-md-6">
-	         				<div class="product-photo">
-	         					<div class="product-photo-big">
-	         						<img src="pic/products/product1.jpg" width="250px" height="150px" alt="product title">
-	         					</div>
-	         					<ul class="product-photo-thumbs">
-	         						<li class="active"><img src="pic/products/product1.jpg" alt="product title"></li>
-	         						<li><img src="pic/products/product2.jpg" alt="product title"></li>
-	         					</ul>
+	         			<div class="col-md-6 col-sm-6">
+	         				<div class="product-photos">
+									<div class="owl-carousel owl-theme">
+										<div class="slider-item" data-thumb="<div class='thumb-item' style='background-image: url(pic/products/product1.jpg);'></div>">
+											<a href="pic/products/product1.jpg" data-fancybox="gallery">
+												<img src="pic/products/product1.jpg" width="250px" height="150px">
+											</a>
+										</div>
+										<div class="slider-item" data-thumb="<div class='thumb-item' style='background-image: url(pic/products/product1.jpg);'></div>">
+											<a href="pic/products/product1.jpg" data-fancybox="gallery">
+												<img src="pic/products/product1.jpg" width="250px" height="150px">
+											</a>
+										</div>
+										<div class="slider-item" data-thumb="<div class='thumb-item' style='background-image: url(pic/products/product1.jpg);'></div>">
+											<a href="pic/products/product1.jpg" data-fancybox="gallery">
+												<img src="pic/products/product1.jpg" width="250px" height="150px">
+											</a>
+										</div>
+										<div class="slider-item" data-thumb="<div class='thumb-item' style='background-image: url(pic/products/product1.jpg);'></div>">
+											<a href="pic/products/product1.jpg" data-fancybox="gallery">
+												<img src="pic/products/product1.jpg" width="250px" height="150px">
+											</a>
+										</div>
+									</div>
 	         				</div>
 	         			</div>
-	         			<div class="col-md-6">
+	         			<div class="col-md-6 col-sm-6">
 	         				<h1 class="product-title">Рейка рулевая 1К1423055М</h1>
 	         				<div class="demo-desc">
 		         				<table>
@@ -56,21 +71,23 @@
 		         				</table>
 	         				</div>
 	         				<div class="product-prices">
-	         					<div class="price-old">95 900 &#164;</div>
-	         					<div class="price">31500 &#164;</div>
+	         					<div class="price-old">95 900&nbsp;&#164;</div>
+	         					<div class="price">31500&nbsp;&#164;</div>
 	         				</div>
-	         				<div class="product-q">
-	         					<label>Количество</label>
-	         					<div class="product-q-field">
-	         						<div class="product-q-plus"><svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg></div>
-	         						<input type="text" name="product-q" class="product-q-input" maxlength="5" value="1" size="5" pattern="[0-9]{1,5}" autocomplete="off">
-	         						<div class="product-q-minus"><svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg></div>
-	         					</div>
-	         				</div>
-	         				<div class="btn-group">
-	         					<button type="button" class="btn">В корзину</button>
-	         					<button type="button" class="btn btn-t">Быстрый заказ</button>
-	         				</div>
+	         				<form action="#">
+		         				<div class="product-q">
+		         					<label>Количество</label>
+		         					<div class="product-q-field">
+		         						<div class="product-q-plus"><svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg></div>
+		         						<input type="text" name="product-q" class="product-q-input" maxlength="5" value="1" size="5" pattern="[1-9]{1}[0-9]{0,4}" autocomplete="off">
+		         						<div class="product-q-minus"><svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg></div>
+		         					</div>
+		         				</div>
+		         				<div class="btn-group">
+		         					<button type="submit" class="btn">В корзину</button>
+		         					<button type="button" class="btn btn-t">Быстрый заказ</button>
+		         				</div>
+	         				</form>
 	         			</div>
          			</div>
          			<div class="product-tab">

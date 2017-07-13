@@ -57,16 +57,16 @@
          <div class="answer-content">
             <ul class="vote-list">
                <li class="vote-answer"><div class="vote-answer-in">Да, цена рублей 300 максимум</div><span class="vote-answer-details">43.7%(195)</span>
-                  <div class="vote-answer-line"><div class="vote-answer-line-in" style="width: 52%; background-color: red;"></div></div>
+                  <div class="vote-answer-line"><div class="vote-answer-line-in color-answer-1" style="width: 52%;"></div></div>
                </li>
                <li class="vote-answer"><div class="vote-answer-in">Если доставка платная, заказывать не буду!</div><span class="vote-answer-details">43.7%(195)</span>
-                  <div class="vote-answer-line"><div class="vote-answer-line-in" style="width: 15%; background-color: yellow;"></div></div>
+                  <div class="vote-answer-line"><div class="vote-answer-line-in color-answer-2" style="width: 15%;"></div></div>
                </li>
                <li class="vote-answer"><div class="vote-answer-in">Нет, для меня главное точность и пунктуальность</div><span class="vote-answer-details">43.7%(195)</span>
-                  <div class="vote-answer-line"><div class="vote-answer-line-in" style="width: 25%; background-color: green;"></div></div>
+                  <div class="vote-answer-line"><div class="vote-answer-line-in color-answer-3" style="width: 25%;"></div></div>
                </li>
                <li class="vote-answer"><div class="vote-answer-in">Да, 500 рублей максимум</div><span class="vote-answer-details">43.7%(195)</span>
-                  <div class="vote-answer-line"><div class="vote-answer-line-in" style="width: 75%; background-color: blue;"></div></div>
+                  <div class="vote-answer-line"><div class="vote-answer-line-in color-answer-4" style="width: 75%;"></div></div>
                </li>
             </ul>
             <div class="vote-total">Всего голосов: 500</div>

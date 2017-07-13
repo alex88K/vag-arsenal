@@ -15,11 +15,13 @@ $pr_medium: 'MuseoSansMedium';
 }
 
 @media screen and (min-width: 1600px) {
-	.container { width: 1600px; }
+	.container { width: 1580px; }
 }
 
 @media screen and (max-width: 1400px) {
 	.header .btn-callback { display: none; }
+
+	.product-tab .nav-tab li { font-size: 120%; }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -33,9 +35,9 @@ $pr_medium: 'MuseoSansMedium';
 	.content-b { float: left; }
 
 	.left-aside,
-	.right-aside { width: 25%; }
+	.right-aside { width: 24%; }
 
-	.content-b { width: 50%; }
+	.content-b { width: 52%; }
 
 	.catalog-filter-form .field { flex-basis: 22.5%; }
 
@@ -52,6 +54,10 @@ $pr_medium: 'MuseoSansMedium';
 
 	.adv-item:after,
 	.adv-footer .adv-item:after { right: 0; }
+
+	.product {
+		.btn-group .btn { margin-right: 5px; }
+	}
 }
 
 @media screen and (max-width: 1199px) {
@@ -308,6 +314,8 @@ $pr_medium: 'MuseoSansMedium';
 
 	.product-item:hover .cart-btn { bottom: 15px; }
 
+	.product-tab .nav-tab li { font-size: 150%; }
+
 	.adv-head,
 	.adv-footer { 
 		width:  80%;
@@ -344,10 +352,7 @@ $pr_medium: 'MuseoSansMedium';
 }
 
 @media screen and (max-width: 767px) {
-	.f-brand {
-		float: none !important;
-		margin-top: 35px;
-	}
+	.f-brand { display: none; }
 
 	.adv-head,
 	.adv-footer { 
@@ -451,5 +456,10 @@ $pr_medium: 'MuseoSansMedium';
 	.product-tab .nav-tab li {
 		margin-right: 15px;
 		font-size: 87%;
+	}
+
+	.modal .contact-form {
+		width: 100%;
+		padding: 0 20px;
 	}
 }

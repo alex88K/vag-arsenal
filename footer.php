@@ -5,8 +5,8 @@
 	   			<div class="f-title">Cвязаться с нами</div>
                <div class="f-text">
                   <p><a href="mailto:info@vagarsenal.ru" class="f-link"><svg class="envelope-i"><use xlink:href="#envelope-i"></use></svg>info@vagarsenal.ru</a>
-                  <a href="tel:+79099219669" class="f-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7 (909) 921-96-69</a>
-                  <a href="tel:+74957777777" class="f-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7 (495) 777-77-77</a></p>
+                  <a href="tel:+79099219669" class="f-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7&nbsp;(909)&nbsp;921-96-69</a>
+                  <a href="tel:+74957777777" class="f-link"><svg class="phone-i"><use xlink:href="#phone-i"></use></svg>+7&nbsp;(495)&nbsp;777-77-77</a></p>
                   <p class="f-address"><svg class="marker-i"><use xlink:href="#marker-i"></use></svg>пр. Римского-Корсакова, д.10, Санкт Петербург, Россия, 123456</p>
                </div>
       		</div>
@@ -36,15 +36,16 @@
 </div>
 <?php include "modal.php" ?>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/42dd138613.js"></script>
-<script src="http://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-<script src="js/main.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://use.fontawesome.com/42dd138613.js"></script>
+   <script src="http://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+   <script src="js/owl.carousel2.thumbs.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+   <script src="js/main.js"></script>
 </body>
 </html>

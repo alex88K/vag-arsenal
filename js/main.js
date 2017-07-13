@@ -76,7 +76,7 @@ $(function() {
 		}
 	};
 
-	if ( $(window).width() < 1199 ) {
+	if ( $(window).width() < 1183 ) {
 		var owlActive = asideProductList.owlCarousel(owlOptions);
 	} else {
 		asideProductList.addClass('off');
@@ -93,7 +93,7 @@ $(function() {
 	});
 
 	$(window).resize(function() {
-		if ( $(window).width() < 1199 ) {
+		if ( $(window).width() < 1183 ) {
 			if ( asideProductList.hasClass('off') ) {
 			    var owlActive = asideProductList.owlCarousel(owlOptions);
 			    asideProductList.removeClass('off');
@@ -181,7 +181,36 @@ $(function() {
 		return false;
 	}); 
 
+/*--Product page----------*/ 
 
+	// slider with thumbs
+
+	var productSlider = $('.product-photos .owl-carousel');
+
+	productSlider.owlCarousel({
+		loop: false,
+		items: 1,
+		dots: false,
+		thumbs: true,
+		thumbContainerClass: 'product-thumbs',
+    	thumbItemClass: 'product-thumb-item'
+	});
+
+	
+
+
+	
+	var quantityProdField = $('.product-q-field input');
+
+	$('.product-q-minus').on('click, mousedown', function() {
+		if ( +quantityProdField.val() > 1 ) {
+			quantityProdField.val( +quantityProdField.val() - 1 );
+		}
+	});
+
+	$('.product-q-plus').on('click, mousedown', function() {
+		quantityProdField.val( +quantityProdField.val() + 1 );
+	});
 
 /*--Mask input-----------*/
 
@@ -319,20 +348,20 @@ $(function() {
 
 
 /* SVG fix for Firefox */ 
-// (function(document, window) {
-// 	"use strict";
-// 	document.addEventListener("DOMContentLoaded", function() {
-// 		var baseUrl = window.location.href
-// 			.replace(window.location.hash, "");
+(function(document, window) {
+	"use strict";
+	document.addEventListener("DOMContentLoaded", function() {
+		var baseUrl = window.location.href
+			.replace(window.location.hash, "");
 
-// 		if( baseUrl.indexOf("#") !== -1 ) { baseUrl = baseUrl.replace("#", ""); }
+		if( baseUrl.indexOf("#") !== -1 ) { baseUrl = baseUrl.replace("#", ""); }
 			
-// 		[].slice.call(document.querySelectorAll("use[*|href]"))
-// 			.filter(function(element) {
-// 				return (element.getAttribute("xlink:href").indexOf("#") === 0);
-// 			})
-// 			.forEach(function(element) {
-// 				element.setAttribute("xlink:href", baseUrl + element.getAttribute("xlink:href"));
-// 			});
-// 	}, false);
-// }(document, window));
+		[].slice.call(document.querySelectorAll("use[*|href]"))
+			.filter(function(element) {
+				return (element.getAttribute("xlink:href").indexOf("#") === 0);
+			})
+			.forEach(function(element) {
+				element.setAttribute("xlink:href", baseUrl + element.getAttribute("xlink:href"));
+			});
+	}, false);
+}(document, window));
