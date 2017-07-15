@@ -7,7 +7,7 @@
    <div class="aside-catalog-b-wrap collapse in" id="catalog-module">
       <div class="list-header">Запчасти для вашего ТО</div>
       <div class="aside-nav">
-         <ul class="aside-nav-lvl_1">
+         <ul class="aside-nav-list">
             <li>
                <a href="/"><svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg>Комплекты ТО</a>
             </li>
