@@ -432,6 +432,27 @@ $pr_medium: 'MuseoSansMedium';
 
 	.adv-help, 
 	.adv-footer .adv-payment { right: 0; }
+
+	/*--Cart--*/
+
+	.cart-row {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		.cartp-img { display: none; }
+		.cartp-title { 
+			width: 100%; 
+			margin-bottom: .4em;
+		}
+		.cartp-quantity {
+			position: relative;
+			left: 5px;
+			width: 42%;
+		}
+		.cartp-price { width: 42%; }
+		.cartp-delete { width: 15%; }
+	}
+
+	.cart-order { margin-top: 15px; }
 } 
 
 @media screen and (max-width: 480px) {

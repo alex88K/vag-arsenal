@@ -566,6 +566,34 @@
   .adv-footer .adv-payment {
     right: 0;
   }
+
+  /*--Cart--*/
+  .cart-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .cart-row .cartp-img {
+    display: none;
+  }
+  .cart-row .cartp-title {
+    width: 100%;
+    margin-bottom: .4em;
+  }
+  .cart-row .cartp-quantity {
+    position: relative;
+    left: 5px;
+    width: 42%;
+  }
+  .cart-row .cartp-price {
+    width: 42%;
+  }
+  .cart-row .cartp-delete {
+    width: 15%;
+  }
+
+  .cart-order {
+    margin-top: 15px;
+  }
 }
 @media screen and (max-width: 480px) {
   .catalog-item {

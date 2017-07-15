@@ -15,7 +15,7 @@
       </div>
       <div class="list-header">Запчасти для автомобилей</div>
       <div class="aside-nav">
-         <ul class="aside-nav-lvl_1">
+         <ul class="aside-nav-list">
             <li>
                <a href="/">
                   <svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg>Audi<div class="brand-thumb-wrap"><img src="pic/car-logos/thumbs/audi.png" class="brand-thumb" alt="Audi"></div>
@@ -25,13 +25,13 @@
                <a href="/">
                   <svg class="caret-left-i"><use xlink:href="#caret-left-i"></use></svg>Volkswagen<div class="brand-thumb-wrap"><img src="pic/car-logos/thumbs/volkswagen.png" class="brand-thumb" alt="Volkswagen"></div>
                </a>
-               <ul class="aside-nav-lvl aside-nav-lvl_2">
+               <ul class="aside-nav-list">
                   <li class="selected">
                      <a href="/">Volkswagen Passat</a>
-                     <ul class="aside-nav-lvl aside-nav-lvl_3">
+                     <ul class="aside-nav-list-lvl">
                         <li class="selected">
                            <a href="/">Passat B5, 1997-2005</a>
-                           <ul class="aside-nav-lvl aside-nav-lvl_4">
+                           <ul class="aside-nav-list-lvl">
                               <li><a href="/">Запчасти для ТО</a></li>
                               <li><a href="/">Тормозная система</a></li>
                               <li><a href="/">Подвеска</a></li>
